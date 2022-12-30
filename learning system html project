@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+/>
+<title>Make a Website Using HTML/CSS</title>
+</head>
+<body background="https://wallpapercave.com/wp/wp8149607.jpg"></body>
+
+<style>
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: 'Poppins';
+line-height: 1.7em;
+
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+
+.container{
+max-width: 1100px;
+margin:auto;
+}
+
+.lead{
+font-size: 16px;
+padding: 10px 10px;
+text-align: justify;
+}
+
+.btn{
+display: inline-block;
+padding: 07px 16px;
+background: rgb(38, 94, 222);;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 03px;
+color:#fff;
+transition: all 0.3;
+}
+
+.clr{
+clear: both;
+}
+
+/ Close Utality Classes /
+
+#navbar{
+background: #3170ff;
+overflow: auto;
+}
+
+#navbar h1{
+float: left;
+padding-top: 20px;
+}
+
+#navbar ul{
+list-style: none;
+float: right;
+}
+
+#navbar ul li{
+float: left;
+}
+
+#navbar ul li a{
+display: block;
+padding: 20px;
+text-align: center;
+transition: all 0.5s;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current{
+background: #4397EA;
+transition: all 0.5s;
+}
+
+/ Showcase Area /
+#showcase{
+background: url('../img/img2.jpg') no-repeat
+center center/cover;
+height: 600px;
+color: #fff;
+}
+
+.showcase-content{
+padding-top: 170px;
+color: #333;
+}
+
+.showcase-content h2{
+font-size: 60px;
+line-height: 1.9em;
+}
+
+.showcase-content p{
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+.showcase-content .btn:hover{
+background: #4397EA;
+border: none;
+color:#fff;
+transition: all 0.3s;
+}
+
+/ About Section /
+
+.about{
+height: 350px;
+margin-top: 40px;
+}
+
+.about h3{
+width: 100%;
+border-bottom: 2px solid #ddd;
+}
+
+.about h3 span{
+background: #ddd;;
+padding: 10px 22px;
+color: #333;
+text-align: center;
+display: inline-block;
+}
+/ Close /
+
+
+#services h3{
+width: 100%;
+border-bottom: 0.5px solid #ddd;;
+}
+
+#services h3 span{
+background: #ddd;
+padding: 10px 22px;
+color: #333;
+text-align: center;
+display: inline-block;
+}
+
+#services .box{
+float: left;
+width: 33.33%;
+padding: 45px;
+text-align: center;
+margin: 30px 0px;
+}
+
+.bg-primary{
+background: #265ede;
+color: #fff;
+}
+
+.light-gray{
+background: #ddd;
+}
+
+#services h2{
+margin-bottom: 25px;
+}
+
+/ Author /
+
+#authors h3{
+width: 100%;
+border-bottom: 0.5px solid #ddd;;
+}
+
+#authors h3 span{
+background: #ddd;
+padding: 10px 22px;
+color: #333;
+text-align: center;
+display: inline-block;
+}
+
+#authors{
+background: url('../img/img.jpg') no-repeat center;
+height: 600px;
+padding-top: 40px ;
+
+}
+
+.auth{
+float: left;
+height: 500px;
+width: 33%;
+color: #fff;
+padding: 20px;
+text-align: center;
+margin: 20px 01px;
+}
+
+.auth img{
+border-radius: 50%;
+}
+
+.names{
+font-weight: bold;
+font-size: 18px;
+}
+
+/ Contact Us /
+#contact h3{
+width: 100%;
+border-bottom: 0.5px solid #ddd;;
+margin-bottom: 35px;
+}
+
+#contact h3 span{
+background: #ddd;
+padding: 10px 22px;
+color: #333;
+text-align: center;
+display: inline-block;
+}
+
+#contact .form-group{
+margin-bottom: 20px;
+}
+
+.contact-form label{
+display: block;
+margin-bottom: 5px;
+}
+
+.contact-form input{
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+}
+
+#contact textarea{
+height: 200px;
+width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+outline: none;
+border-color: #265ede;
+}
+
+
+/ Footer */
+
+#main-footer{
+background: #265ede;
+padding: 20px;
+margin-top: 20px;
+text-align: center;
+color:#fff;
+}
+</style>
+<body>
+<header>
+<!-- Navbar -->
+<nav id="navbar">
+<div class="container">
+<h1><a href="#"><i>HarikaTech</i></a></h1>
+<ul>
+<li><a href="index.html" class="current">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+<!-- Showcase Area -->
+<div id="showcase">
+<div class="container">
+<div class="showcase-content">
+<h2><i>Learning System of Technology</i></h2>
+<p class="lead">
+    A learning system is essentially a collection of artefacts that are ‘brought together’, in an appropriate way, in order to create an environment that will facilitate various types of learning process. Learning system s can take a variety of different forms - for example, a book, a mobile form, a computer, an online forum, a school and a university.
+</p>
+<a href="#" class="btn">Read More</a>
+</div>
+</div>
+</div>
+</header>
+
+<!-- About Section -->
+<section class="about">
+<div class="container">
+<h3 class="bg-dark-line"><span>About Us</span></h3>
+<p class="lead">
+    The Learning Success System is a simple research based method parents can use to help children overcome learning difficulties. It simplifies the process and enables a parent to work at home with their child
+
+ 
+
+    The Learning Success System:
+    
+    Convenient for both children and parents
+    Minimizes high costs of learning centers
+    Uses Cutting edge neuroscience research
+    The brain is very complex. The brain and body are highly integrated. Complex systems such as emotions, incremental learning skills, mind body connections and more come into play in the learning process. Because of this we believe that no single field of expertise has the answer to overcoming a learning difficulty. It takes a multi-disciplinary approach. That's what we have created.
+    
+    You often hear people say "No two dyslexics are the same". Or "No two dyscalculics are the same". This should make it obvious that there is no single answer. Instead it takes the right combination of answers. We think this is obvious. But that's just us. Because the right combination of answers comes from a variety of sources our approach has been to assemble a team from all of those sources.
+</p>
+<p class="lead">
+    Our main strategy is divided into three parts. Some limited success can be achieved by using only one part. Which is what most programs do. We believe, that to have maximum success, a system must incorporate all three parts.
+    Learning happens from the outside in. Our sensory systems integrate together. Most learning will require more than one. When we try to isolate learning to the mind only, we are eliminating other sensory systems and blocking the natural learning process. Think about old playground games such as hopscotch, Pat-a-cake, jump rope, story telling. How many sensory systems did these games use? We must use them all to learn.
+</p>
+</div>
+</section>
+<!-- Our Services -->
+<div id="services">
+<div class="container">
+<h3 class="bg-dark-line"><span>Services</span></h3>
+<div class="box bg-primary">
+<h2><i>Web Designing</i></h2>
+<i class="fa-solid fa-paintbrush fa-4x"></i>
+<p class="lead">
+    Web design identifies the goals of a website or webpage and promotes accessibility for all potential users. This process involves organizing content and images across a series of pages and integrating applications and other interactive elements
+</p>
+</div>
+<div class="box light-gray">
+<h2><i>Web Development</i></h2>
+<i class="fa-solid fa-code fa-4x"></i>
+<p class="lead">
+
+    Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. 
+</p>
+</div>
+<div class="box bg-primary">
+<h2><i>Desktop Application</i></h2>
+<i class="fa-solid fa-desktop fa-4x"></i>
+<p class="lead">
+    Desktop Applications are run stand alone on the user’s laptops and systems. The term used for these applications desktop differ these apps from mobile applications which is in the trend.
+</p>
+</div>
+</div>
+</div>
+
+<div class="clr"></div>
+
+
+
+<!-- Contact -->
+<div id="contact">
+<div class="container">
+<h3><span>Contact Us</span></h3>
+<div class="contact-form">
+<form action="process.php">
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" name="name" />
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" name="name" />
+</div>
+<div class="form-group">
+<label for="message">Message</label>
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+</div>
+<button type="button" class="btn">Submit</button>
+</form>
+</div>
+</div>
+</div>
+<footer id="main-footer">
+<div class="container">
+<p>
+Learning System of Technology Design by Harika
+<a href="https://www.w3schools.com/"> </a> &copy 2022
+</p>
+</div>
+</footer>
+</body>
+</html>
